@@ -1,0 +1,187 @@
+@use '../components/variables'as *;
+
+.light-text {
+    color: $grey-light;
+}
+
+.dark-text {
+    color: $grey-dark;
+}
+
+.green-text {
+    color: $graphic-cyan;
+}
+
+.green-light-text {
+    color: $cyan-footer;
+}
+
+.blue-text {
+    color: $ph-text-blue;
+}
+
+.very-dark-text {
+    color: $dark-desaturated-blue;
+
+}
+
+.line {
+    line-height: 25px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .subtitle,
+        .image-title {
+            font-weight: 900;
+            font-size: 1.5em;
+        }
+
+        .img-container {
+            .img-section {
+                width: 100%;
+            }
+        }
+
+        .section-container {
+            text-align: center;
+            padding-left: 35px;
+            padding-right: 35px;
+            margin-top: 30px;
+            margin-bottom: 50px;
+
+            .subtitle {
+                white-space: pre-line;
+            }
+
+            .description-text {
+                margin-bottom: 25px;
+            }
+
+            .learn-more-span {
+                .learn-more-link {
+                    text-transform: uppercase;
+                    border-bottom: 7px inset;
+                }
+
+                .pink {
+                    border-color: $soft-red;
+                }
+
+                .yellow {
+                    border-color: $yellow;
+
+                }
+            }
+        }
+
+        .design-section {
+            background-image: url(/assets/mobile/image-graphic-design.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        .ph-section {
+            background-image: url(/assets/mobile/image-photography.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        .design-ph {
+            margin-bottom: 0;
+            margin-top: 0;
+            padding-right: 35px;
+            padding-left: 35px;
+
+            .image-title {
+                margin-top: 110%;
+                font-weight: 900;
+            }
+
+            .description-text {
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 750px) {
+
+
+    .main {
+
+        .section {
+            .img-container {
+                .img-pc-section {
+                    width: 100%;
+                    display: block;
+                }
+            }
+
+            .section-container {
+                padding: 0;
+                margin: 0;
+
+                .description-text {
+                    padding-left: 10%;
+                    padding-right: 10%;
+                }
+            }
+
+            .img-container,
+            .section-container {
+                width: 50%;
+
+            }
+
+            .subtitle,
+            .image-title {
+                font-size: 2em;
+                font-weight: 900;
+            }
+        }
+
+        .design-ph-section {
+            flex-direction: row;
+            width: 100%;
+            align-items: unset;
+
+            .design-ph {
+                width: 50%;
+                padding-left: 0;
+                padding-right: 0;
+                display: inline-block;
+
+                .description-text {
+                    padding-left: 10%;
+                    padding-right: 10%;
+                }
+            }
+        }
+
+        .colors-section {
+            flex-direction: row;
+        }
+
+        .reverse {
+            flex-direction: row-reverse;
+        }
+    }
+
+
+}

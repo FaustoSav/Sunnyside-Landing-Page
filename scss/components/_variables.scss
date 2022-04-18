@@ -1,0 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+$white: white;
+$soft-red:hsl(7, 99%, 70%);
+//Graphic desgin text.
+$graphic-cyan:hsl(167, 40%, 24%);
+//Photography text
+$ph-text-blue:hsl(198, 62%, 26%);
+//Footer
+$cyan-footer: hsl(168, 34%, 41%);
+
+$yellow:hsl(51, 100%, 49%);
+//Nav links .
+$grey-light:hsl(210, 4%, 67%);
+
+//h2  testimonials names and contact nav.
+$dark-desaturated-blue: hsl(212, 27%, 19%);
+
+//h2-ph and testimonial jobs.
+$grey-dark:hsl(213, 9%, 39%);
+
+$font-sans-serif: 'Barlow', sans-serif;
+$font-serif:'Fraunces', serif;
+
+.serif{
+    font-family: $font-serif;
+}
+.sans-serif{
+    font-family: $font-sans-serif;
+}

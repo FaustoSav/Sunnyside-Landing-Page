@@ -1,0 +1,212 @@
+@use '../components/variables'as *;
+
+
+.desktop {
+    display: none;
+}
+
+.small {
+    display: initial;
+}
+
+body {
+    min-width: 300px;
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    background-image: url(/assets/mobile/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    
+
+    h1 {
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        white-space: pre-line;
+        width: 100%;
+        margin-top: 30%;
+    }
+
+    .arrow-icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+
+    }
+
+    .logo-header {
+        margin-top: 25px;
+        margin-left: 5%;
+
+    }
+
+    .menu-icon {
+        position: absolute;
+        top: 25px;
+        right: 5%;
+    }
+
+
+   
+    .nav {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: $white;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: auto;
+        margin-top: 30px;
+
+
+        .triangle {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 0 35px 30px;
+            border-color: transparent transparent #ffffff transparent;
+            line-height: 0px;
+            position: absolute;
+            top: -20px;
+            align-self: flex-end;
+
+
+        }
+
+        .nav-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .nav-list-item {
+                margin-top: 5%;
+                margin-bottom: 10%;
+
+                .contact-link-item {
+                    background-color: $yellow;
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                }
+
+                .nav-link-item {
+                    color: $grey-dark;
+                }
+            }
+
+            .first-list-item {
+                margin-top: 12%;
+            }
+
+            .contact-list-item {
+                margin-bottom: 15%;
+            }
+
+        }
+
+    }
+    .nav-visible{
+        display: none;
+    }
+}
+@media screen and (min-width: 440px){   
+    .nav-link-item{
+        font-size: 1.2em;
+    }
+
+}
+@media screen and (min-width: 750px) {
+    .small {
+        display: none;
+    }
+
+    .desktop {
+        display: initial;
+    }
+
+    body {
+        min-width: 1200px;
+        font-size: 18px;
+
+    }
+
+    .header {
+        width: 100%;
+        background-image: url(/assets/desktop/image-header.jpg);
+        background-size: cover;
+        height: 100vh;
+
+        h1 {
+            margin-top: 20vh;
+            white-space: inherit;
+            font-size: 4em;
+        }
+
+        .arrow-icon {
+            top: 53%;
+        }
+
+        
+
+
+        .nav {
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            width: 98%;
+            margin: 0;
+            background-color: transparent;
+            padding-top: 60px;
+            
+            .logo-header-pc {
+                width: 200px;
+                padding-left:40px;
+            }
+
+            .nav-list {
+                width: 95%;
+                flex-direction: row;
+                justify-content: end;
+                
+                .nav-list-item {
+                    margin: 0;
+
+                    .nav-link-item {
+                        color: $white;
+                        margin-right: 7vh;
+                        font-size: 1.1em;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .contact-link-item {
+                        background-color: $white;
+                        text-transform: uppercase;
+                        color: $grey-dark;
+                        margin-right: 0;
+                        padding: 15px 25px;
+                        border-radius: 30px;
+                        font-size: 1em;
+                        &:hover{
+                            color: $white;
+                            background-color: rgba(255, 255, 255, 0.274);
+                        }
+                    }
+
+                    
+                }
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,34 @@
+@use '../components/variables'as *;
+
+
+.section-image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+
+    .image-section-div {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+
+        .each-image {
+            width: 50%;
+            height: 50%;
+
+        }
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .main {
+        .section-image {
+            flex-direction: row;
+            margin-top: 50px;
+            width: 100%;
+
+           
+        }
+    }
+}
